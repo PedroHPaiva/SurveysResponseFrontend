@@ -1,0 +1,26 @@
+.p-calendar .p-inputtext {
+  background: transparent;
+  border: none;
+}
+
+.datePickerContainer i {
+  font-size: 1.5rem;
+  color: #151715;
+}
+
+.datePickerContainer .p-inputtext::placeholder {
+  color: #171517;
+}
+
+.datePickerContainer .p-inputtext {
+  color: #171517;
+  padding: 0.2rem 0.5rem;
+}
+
+@media (width <= 768px) {
+  .datePickerContainer .p-inputtext {
+    padding: 0.75rem 0px;
+    width: 200px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,214 @@
+.menuBar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menuBar h1 {
+  color: var(--Color-Typography-T2---Pure, #272424);
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.menuBar .buttonStyle {
+  background: transparent;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+.userContainerDesktop {
+  height: 20px;
+}
+
+.buttonExpandDesktop {
+  margin-left: 0rem;
+  background: #866c6d;
+  color: #fff;
+  width: 25px;
+  height: 20px;
+}
+
+.buttonExpandDesktop .pi {
+  font-size: 1rem;
+}
+
+.buttonNotExpandDesktop {
+  margin-right: -0.813rem;
+  background: #866c6d;
+  color: #fff;
+  width: 25px;
+  height: 20px;
+}
+
+.buttonNotExpandDesktop .pi {
+  font-size: 1rem;
+}
+
+.bgButtonActualPageDesktopNotExpanded {
+  background: #dcc6b7;
+}
+
+.iconHeader {
+  font-weight: 300;
+  color: #151715;
+}
+
+.userNotExpandedHeader {
+  background: #eeeeee;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HeaderPage .footerContentButton {
+  background: #dcc6b7;
+  border: none;
+  color: #151715;
+  padding: 9px 60px;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: Inter;
+}
+
+.HeaderPage .mobileFooterContentButton {
+  background: #dcc6b7;
+  border: none;
+  color: #151715;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: Inter;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.HeaderPage .p-input-icon-right > .p-inputtext {
+  border: none;
+}
+
+.HeaderPage .passwordText {
+  width: 100%;
+  height: 3rem;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+  border-radius: 6px;
+  border: 1px solid #bdbdbd;
+  background: #fff;
+  color: #151715;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.313rem;
+  letter-spacing: 0.25px;
+}
+
+.HeaderPage .titleText {
+  width: 150px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  text-wrap: wrap;
+}
+
+.menu-item-icon {
+  flex-shrink: 0; /* Garante que o ícone não diminua de tamanho */
+  width: 20px;
+  height: 20px;
+}
+
+.menu-item-text {
+  flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+  white-space: normal; /* Permite a quebra de linha */
+  word-break: break-word; /* Garante a quebra de palavras longas */
+  padding-left: 8px; /* Espaço entre o ícone e o texto */
+  font-weight: 500;
+}
+
+/* prime components */
+
+.pi {
+  font-size: 1.25rem;
+}
+
+.text-primary {
+  color: #000;
+}
+
+.expandedDesktop {
+  width: 11.875rem;
+}
+
+.notExpandedDesktop {
+  width: 5rem;
+}
+
+.p-sidebar-left .p-sidebar {
+  width: 15rem;
+}
+
+.fadeinleft-animation {
+  animation: fadeinleft 0.15s linear;
+}
+
+.fadeinright-animation {
+  animation: fadeinright 0.15s linear;
+}
+
+@keyframes fadeinright {
+  0% {
+    opacity: 1;
+    transform: translateX(5rem);
+    transition:
+      transform 0.12s cubic-bezier(0, 0, 0.2, 1),
+      opacity 0.12s cubic-bezier(0, 0, 0.2, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeinleft {
+  0% {
+    opacity: 1;
+    transform: translateX(
+      -5rem
+    ); /* Inicia a partir de -5rem para a direção esquerda */
+    transition:
+      transform 0.12s cubic-bezier(0, 0, 0.2, 1),
+      opacity 0.12s cubic-bezier(0, 0, 0.2, 1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (width <= 768px) {
+  .HeaderPage .p-dialog {
+    max-height: 100%;
+  }
+  .HeaderPage .p-dialog .p-dialog-header {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+}

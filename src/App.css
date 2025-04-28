@@ -1,0 +1,53 @@
+.fixedHeaderDesktop {
+  position: fixed;
+  z-index: 4;
+  height: 5.625rem;
+  width: 100%;
+  background: #f3f3f3;
+}
+
+.fixedHeaderDesktop h1 {
+  color: var(--Typography-Neutral-8, #000);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 0;
+}
+
+.fixedHeaderExpanded {
+  padding-left: 11.875rem;
+}
+
+.fixedHeaderNotExpanded {
+  padding-left: 5rem;
+}
+
+.pageContainer {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 7rem;
+  overflow-x: auto;
+}
+
+.pageContainerMobile {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.tableWrapper {
+  width: 100%;
+}
+
+@media (width <= 768px) {
+  .fixedHeaderExpanded {
+    padding-left: 0rem;
+  }
+
+  .fixedHeaderNotExpanded {
+    padding-left: 0rem;
+  }
+}

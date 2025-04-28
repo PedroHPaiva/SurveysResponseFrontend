@@ -1,0 +1,77 @@
+.fixedHeaderMobile {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.fixedHeaderMobile h1 {
+  color: var(--Typography-Neutral-8, #000);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 0;
+}
+
+.dashboardContainer h1 {
+  color: var(--Typography-Neutral-8, #000);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 0;
+}
+
+.dashboardContainer .dashboardButtonPickerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dashboardContainer
+  .dashboardButtonPickerContainer
+  .allDashboardCharts
+  .scrollable {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  max-width: 100%;
+}
+
+.allDashboardCharts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chartContainerFull {
+  width: 100%;
+  flex: 0 0 auto;
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  height: auto;
+  border-radius: 8px;
+}
+
+.chartContainerFull h1 {
+  color: var(--Color-Neutral-N2---Medium, #616161);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+@media (width <= 768px) {
+  .dashboardContainer .dashboardButtonPickerContainer {
+    display: block;
+  }
+
+  .allDashboardCharts {
+    display: flex;
+    align-items: center;
+  }
+}

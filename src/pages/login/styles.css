@@ -1,0 +1,53 @@
+.login .p-input-icon-right > .p-inputtext {
+  width: 100%;
+}
+
+/* .login .container {
+  margin-top: 8rem;
+} */
+
+.login .buttonLogin {
+  background: #dcc6b7;
+  color: #000;
+  border: none;
+  text-align: center;
+  display: block;
+}
+
+.login .p-icon-field {
+  width: 100%;
+}
+
+.login .p-inputtext {
+  width: 100%;
+}
+
+.login .centeredUnder {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.login .centeredUp {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (width <= 768px) {
+  .login .centeredUnder {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .login .centeredUp {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

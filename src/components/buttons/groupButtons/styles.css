@@ -1,0 +1,35 @@
+.groupButton .p-buttonset .p-button:not(:first-of-type):not(:last-of-type) {
+  border-radius: 8px;
+  margin: 0px 3px;
+  height: 32px;
+  padding: 8px 16px;
+  border: 1px solid #bdbdbd;
+}
+
+.groupButton .p-buttonset .p-button:last-of-type {
+  border-radius: 8px;
+  margin: 0px 3px;
+  height: 32px;
+  padding: 8px 16px;
+  border: 1px solid #bdbdbd;
+}
+
+.groupButton .p-buttonset .p-button:first-of-type {
+  border-radius: 8px;
+  margin-right: 3px;
+  height: 32px;
+  padding: 8px 16px;
+  border: 1px solid #bdbdbd;
+}
+
+.groupButton .p-selectbutton .p-button.p-highlight {
+  background: var(--Color-Brand-B1---Pure, #dcc6b7);
+  border-color: #dcc6b7;
+  color: #000;
+}
+
+.groupButton .scrollable {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0px;
+}
